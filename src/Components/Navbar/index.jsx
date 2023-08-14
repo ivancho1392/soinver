@@ -1,5 +1,6 @@
 import styles from './styles.module.css'
 import Image from 'next/image';
+import { FaBars } from 'react-icons/fa6';
 
 const Navbar = () => {
     return (
@@ -13,7 +14,9 @@ const Navbar = () => {
                 layout="responsive"
                 />
             </div>
-            <div className={styles.options}>options</div>
+            <div className={styles.options}>
+                <FaBars size={30}/>
+            </div>
         </nav>
     )
 }
