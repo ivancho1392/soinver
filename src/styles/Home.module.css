@@ -10,7 +10,7 @@
   margin-top: 60px;
   background-image: url("https://soinverjip.s3.amazonaws.com/mobile/imagenes/HomePage1.jpg");
   background-position: center;
-  width: 90%;
+  width: 100%;
   max-width: 976px;
   height: auto; 
   padding: 0;
@@ -22,7 +22,7 @@
 }
 
 .homeTittle {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 100;
   width: 80%;
   margin-top: 80px;
@@ -45,7 +45,8 @@
 }
 
 .homeMenus > div {
-  width: 70%;
+  cursor: pointer;
+  width: 80%;
   height: 100%;
   color: white;
   background: rgba(0, 0, 0, 0.6);

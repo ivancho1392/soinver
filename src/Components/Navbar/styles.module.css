@@ -18,14 +18,14 @@
 }
 
 .logo{
-    width: 300px;
+    width: 200px;
     margin-left: 4px;
     margin-top: 8px;
     cursor: pointer;
 }
 
 .options{
-    width: 50px;
+    width: 30px;
     margin-right: 20px;
     cursor: pointer;
 }
