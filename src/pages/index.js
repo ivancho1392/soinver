@@ -5,7 +5,7 @@ import { BsGearFill } from 'react-icons/bs';
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.homepage}>
       <div className={styles.homeBackground}>
         <h1 className={styles.homeTittle}>Elevadores y Escaleras Eléctricas</h1>
         <div className={styles.homeMenus}>
@@ -36,6 +36,6 @@ export default function Home() {
         </div>
       </div>
       <div>Seccion siguiente</div>
-    </>
-  );
+      </div>
+  )
 }

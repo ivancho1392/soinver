@@ -1,48 +1,54 @@
-.homeBackground {
-  background-image: url("https://soinverjip.s3.amazonaws.com/mobile/imagenes/HomePage1.jpg"); /* Agrega la URL de la imagen aquí */
+.homepage {
   background-color: rgb(0, 0, 0);
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
-  top: 0;
-  left: 0;
-  width: 100vw; /* El ancho ocupará el 100% del viewport */
-  height: auto; /* El alto ocupará el 100% del viewport */
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBackground {
+  margin-top: 60px;
+  background-image: url("https://soinverjip.s3.amazonaws.com/mobile/imagenes/HomePage1.jpg");
+  background-position: center;
+  width: 90%;
+  max-width: 976px;
+  height: auto; 
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
+  border-radius: 16px;
 }
 
 .homeTittle {
   font-size: 35px;
   font-weight: 100;
-  width: 400px;
+  width: 80%;
   margin-top: 80px;
   margin-bottom: 500px;
   padding: 16px;
-  background: rgba(0, 0, 0, 0.6); 
-  color: white; 
-  text-align: center; 
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
   border-radius: 12px;
 }
 
 .homeMenus {
-  display: grid; /* Cambiar a cuadrícula */
-  grid-template-rows: repeat(2, 1fr); /* 2 filas de igual tamaño */
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
-  gap: 24px; /* Espacio entre los elementos */
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
   align-items: center;
   justify-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .homeMenus > div {
-  width: 180px;
-  height: 180px;
+  width: 70%;
+  height: 100%;
   color: white;
-  background: rgba(0, 0, 0, 0.6); 
+  background: rgba(0, 0, 0, 0.6);
   border: 2px solid white;
   border-radius: 16px;
   display: flex;
@@ -51,14 +57,14 @@
 }
 
 /*Estilos para contenedor de las 3 columnas*/
-.homeM1{
+.homeM1 {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
 /*Estilos para contenedor de las 2 filas*/
-.homeM2{
+.homeM2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -67,17 +73,17 @@
   height: 50px;
 }
 
-.homeM3{
+.homeM3 {
   font-weight: 400;
   font-size: 30px;
 }
 
-.homeM4{
+.homeM4 {
   font-size: 16px;
   text-align: center;
 }
 
-.homeLogos{
+.homeLogos {
   width: 30px;
   height: 30px;
 }
