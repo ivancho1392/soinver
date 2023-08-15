@@ -11,7 +11,7 @@
   background-image: url("https://soinverjip.s3.amazonaws.com/mobile/imagenes/HomePage1.jpg");
   background-position: center;
   width: 100%;
-  max-width: 976px;
+  max-width: 800px;
   height: auto; 
   padding: 0;
   display: flex;
@@ -26,7 +26,7 @@
   font-weight: 100;
   width: 80%;
   margin-top: 80px;
-  margin-bottom: 500px;
+  margin-bottom: 700px;
   padding: 16px;
   background: rgba(0, 0, 0, 0.6);
   color: white;
@@ -41,7 +41,7 @@
   row-gap: 40px;
   align-items: center;
   justify-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 300px;
 }
 
 .homeMenus > div {

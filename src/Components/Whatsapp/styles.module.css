@@ -1,0 +1,79 @@
+.container{
+  position: fixed;
+  bottom: 120px;
+  left: 4px;
+  z-index: 100;
+}
+
+.btnWhatsapp {
+  position: absolute;
+}
+
+.btnWhatsapp:before,
+.btnWhatsapp:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 4px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #00e676;
+  animation: onda 1.7s infinite;
+  opacity: 0;
+}
+
+.btnWhatsapp:before {
+  animation-delay: 1s;
+}
+
+.btnWhatsapp:after {
+  animation-delay: 1.3s;
+}
+
+.btnWhatsappImage {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes onda {
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .btnWhatsappImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btnWhatsapp:before,
+  .btnWhatsapp:after {
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    animation: onda 1.7s infinite;
+    opacity: 0;
+  }
+
+  .btnWhatsapp:before {
+    animation-delay: 1s;
+  }
+
+  .btnWhatsapp:after {
+    animation-delay: 1.3s;
+  }
+}
+

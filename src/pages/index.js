@@ -2,9 +2,11 @@ import styles from "../styles/Home.module.css";
 import { FaHandshake, FaTools, FaGears } from 'react-icons/fa';
 import { MdEngineering } from 'react-icons/md';
 import { BsGearFill } from 'react-icons/bs';
+import Layout from "../Components/Layout";
 
 export default function Home() {
   return (
+    <Layout> 
     <div className={styles.homepage}>
       <div className={styles.homeBackground}>
         <h1 className={styles.homeTittle}>Elevadores y Escaleras Eléctricas</h1>
@@ -37,5 +39,6 @@ export default function Home() {
       </div>
       <div>Seccion siguiente</div>
       </div>
+      </Layout>
   )
 }
