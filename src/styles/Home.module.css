@@ -9,10 +9,10 @@
 .homeBackground {
   margin-top: 60px;
   background-image: url("https://soinverjip.s3.amazonaws.com/mobile/imagenes/HomePage1.jpg");
-  background-position: center;
+  background-position: top;
   background-size: contain;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   height: auto; 
   padding: 0;
   display: flex;
