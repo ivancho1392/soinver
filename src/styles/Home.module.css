@@ -1,13 +1,5 @@
-.homepage {
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .homeBackground {
-  margin-top: 60px;
+  margin-top: 50px;
   background-image: url("https://soinverjip.s3.amazonaws.com/mobile/imagenes/HomePage1.jpg");
   background-position: top;
   background-size: contain;
@@ -19,7 +11,6 @@
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  border-radius: 16px;
 }
 
 .homeTittle {
@@ -55,7 +46,7 @@
   row-gap: 20px;
   align-items: center;
   justify-items: center;
-  margin-bottom: 300px;
+  margin-bottom: 30px;
 }
 
 .homeMenus > div {
@@ -101,4 +92,29 @@
 .homeLogos {
   width: 30px;
   height: 30px;
+}
+
+
+/*Styles forr Second Section*/
+.ssHeader{
+  margin-top: 16px;
+  position: relative;
+}
+
+.ssHeader h1{
+  margin-top: 12px;
+  font-weight: 100;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px; 
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 12px;
+}
+
+.ssImage{
+  width: 100%;
+  max-width: 600px;
 }

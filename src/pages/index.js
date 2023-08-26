@@ -3,18 +3,20 @@ import { FaHandshake, FaTools, FaGears } from "react-icons/fa";
 import { MdEngineering } from "react-icons/md";
 import { BsGearFill } from "react-icons/bs";
 import Layout from "../Components/Layout";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <Layout>
-      <div className={styles.homepage}>
-        {/* Primera Seccion */}
+      <>
+        {/* First Section */}
         <div className={styles.homeBackground}>
           <h1 className={styles.homeTittle}>
             Elevadores y Escaleras Eléctricas
           </h1>
           <h1 className={styles.homeTittle2}>
-            Soluciones de Ingeniería Vertical, el mejor servicio en equipos de transporte vertical
+            Soluciones de Ingeniería Vertical, el mejor servicio en equipos de
+            transporte vertical
           </h1>
           <div className={styles.homeMenus}>
             <div className={styles.homeM1}>
@@ -59,9 +61,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Segunda Seccion */}
-        <div>Seccion siguiente</div>
-      </div>
+        {/* Second Section */}
+        <div className={styles.secondSection}>
+          <div className={styles.ssHeader}>
+              <h1>Nuestros Servicios</h1>
+            <div className={styles.ssImage}>
+              <Image
+                src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/NuestrosServicios1240.png"
+                width="1240"
+                height="656"
+                alt="LogoSoinver"
+                layout="responsive"
+              />
+            </div>
+          </div>
+        </div>
+      </>
     </Layout>
   );
 }
