@@ -1,9 +1,14 @@
 import styles from "../styles/Home.module.css";
 import { FaHandshake, FaTools, FaGears } from "react-icons/fa";
 import { MdEngineering } from "react-icons/md";
-import { BsGearFill } from "react-icons/bs";
+import { BsGearFill, BsJustify } from "react-icons/bs";
 import Layout from "../Components/Layout";
 import Image from "next/image";
+import CardService from "../Components/CardService";
+import CardServiceRight from "../Components/CardServiceRight";
+import { VscTools } from "react-icons/vsc";
+import { BsPcDisplay } from "react-icons/bs";
+import { GiModernCity } from "react-icons/gi";
 
 export default function Home() {
   return (
@@ -61,10 +66,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Second Section */}
+        s{/* Second Section */}
         <div className={styles.secondSection}>
           <div className={styles.ssHeader}>
-              <h1>Nuestros Servicios</h1>
+            <h1>Nuestros Servicios</h1>
             <div className={styles.ssImage}>
               <Image
                 src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/NuestrosServicios1240.png"
@@ -75,6 +80,36 @@ export default function Home() {
               />
             </div>
           </div>
+          <CardService
+            service="Instalación de Equipos Nuevos"
+            description="Elevadores<br />
+              Escaleras electrícas<br />
+              Rampas electrícas<br />
+              Entre otros<br />"
+            icon={<VscTools style={{ color: "yellow", fontSize: "30px" }} />}
+          />
+          <CardServiceRight
+            service="Ajuste Electromecánico"
+            description="Puesta en marcha<br />
+              Ajuste<br />
+              Pruebas de seguridad<br />
+              Llave en mano<br />"
+            icon={<BsPcDisplay style={{ color: "yellow", fontSize: "30px" }} />}
+          />
+          <CardService
+            service="Mantenimiento Preventivo y Correctivo"
+            description="Rutinas de mantenimiento<br />
+              Reparaciones<br />
+              Overhaul<br />
+              Entre otros<br />"
+            icon={<MdEngineering style={{ color: "yellow", fontSize: "30px" }} />}
+          />
+          <CardServiceRight
+            service="Modernizaciones"
+            description="Adecuación de sistemas de control, botoneras, variadores de frecuencia, y demás elementos que brinden funcionalidades y estética moderna a sus equipos."
+            icon={<GiModernCity style={{ color: "yellow", fontSize: "30px" }} />}
+            textAlign="justify"
+          />
         </div>
       </>
     </Layout>

@@ -99,6 +99,7 @@
 .ssHeader{
   margin-top: 16px;
   position: relative;
+  z-index: 1;
 }
 
 .ssHeader h1{

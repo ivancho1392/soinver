@@ -1,18 +1,18 @@
 import styles from "./styles.module.css"
 
-const CardService = ({service, description, icon}) => {
+const CardServiceRight = ({service, description, icon, textAlign}) => {
     return (
         <div className={styles.service}>
             <div className={styles.serviceTittle} >
                 {service}
             </div>
-            <div className={styles.sectionBody}>
+            <div className={`${styles.sectionBody} ${textAlign === "justify" ? styles.justifyText : ""}`}>
+                <div className={styles.serviceIcon}> {icon} </div>
                 <p className={styles.serviceBody} dangerouslySetInnerHTML={{ __html: description }}>
                 </p>
-                <div className={styles.serviceIcon}> {icon} </div>
             </div>
         </div>
     )
 }
 
-export default CardService;
+export default CardServiceRight;

@@ -1,11 +1,12 @@
 .service {
-  margin: 12px 0px 0px 0px;
+  margin: 12px 0px 0px auto;
   border: solid 3px black;
   background-color: black;
   width: 60%;
   max-width: 340px;
-  border-radius: 0px 24px 24px 0px;
+  border-radius: 24px 0px 0px 24px;
   color: white;
+  text-align: right;
 }
 
 .serviceTittle {
@@ -25,13 +26,17 @@
   margin-bottom: 8px;
 }
 
+.justifyText{
+  text-align: justify; 
+}
+
 .serviceBody {
   width: 70%;
-  margin: 0px 0px 0px 32px;
+  margin: 0px 32px 0px 0px;
   height: 100%;
 }
 
 .serviceIcon {
   width: 25%;
-  margin-right: 8px;
+  margin-left: 8px;
 }
