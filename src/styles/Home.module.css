@@ -15,12 +15,12 @@
 }
 
 .homeTittle {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 100;
-  width: 80%;
-  margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 60px;
   padding: 16px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
   color: white;
   text-align: center;
   margin-left: auto;
@@ -29,12 +29,12 @@
 }
 
 .homeTittle2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
   width: 80%;
-  margin-top: 4px;
+  margin-top: 60px;
   margin-bottom: auto;
-  padding: 8px;
+  padding: 16px;
   background: rgba(255, 255, 255, 0.9);
   color: black;
   text-align: center;
@@ -51,11 +51,12 @@
   align-items: center;
   justify-items: center;
   margin: auto;
+  margin-top: 120px;
 }
 
 .homeMenus > div {
   cursor: pointer;
-  width: 70%;
+  width: 80%;
   height: 90%;
   color: white;
   background: rgba(0, 0, 0, 0.6);
@@ -64,10 +65,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 /*Estilos para contenedor de las 3 columnas*/
 .homeM1 {
+  margin-left: 8px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -81,21 +84,25 @@
   width: 90%;
   justify-content: space-between;
   height: 50px;
+  margin-bottom: 20px;
 }
 
 .homeM3 {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .homeM4 {
-  font-size: 16px;
+  font-size: 30px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .homeLogos {
   width: 30px;
   height: 30px;
+  margin: auto;
 }
 
 
@@ -112,7 +119,8 @@
   margin-top: 12px;
   margin-left: 60px;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 60px;
+  font-weight: 400;
   position: absolute;
   top: 0;
   left: 0;

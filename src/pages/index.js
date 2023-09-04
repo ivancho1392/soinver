@@ -45,7 +45,7 @@ export default function Home() {
           <ScrollContainer style={{ width: 600 }}>
             {/*titulo*/}
             <ScrollPage>
-              <Animator animation={FadeUp}>
+              <Animator animation={FadeUp} style={{ width: 500 }}>
                 <h1 className={styles.homeTittle}>
                   Elevadores y Escaleras Eléctricas
                 </h1>
@@ -53,7 +53,7 @@ export default function Home() {
             </ScrollPage>
             {/*subtitulo*/}
             <ScrollPage>
-              <Animator animation={FadeUp}>
+              <Animator animation={FadeUp} style={{ width: 450 }}>
                 <h1 className={styles.homeTittle2}>
                   Soluciones de Ingeniería Vertical, el mejor servicio en
                   equipos de transporte vertical
@@ -134,7 +134,7 @@ export default function Home() {
                 <h1>Nuestros Servicios</h1>
                 <div className={styles.ssImage}>
                   <Image
-                    src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/NuestrosServicios1240.png"
+                    src="https://soinverjip.s3.amazonaws.com/fotos/20230808_131649.jpg"
                     width="1240"
                     height="656"
                     alt="LogoSoinver"
@@ -161,7 +161,7 @@ export default function Home() {
               Entre otros<br />"
                       icon={
                         <VscTools
-                          style={{ color: "yellow", fontSize: "30px" }}
+                          style={{ color: "yellow", fontSize: "60px" }}
                         />
                       }
                     />
@@ -175,37 +175,35 @@ export default function Home() {
               Llave en mano<br />"
                       icon={
                         <BsPcDisplay
-                          style={{ color: "yellow", fontSize: "30px" }}
+                          style={{ color: "yellow", fontSize: "60px" }}
                         />
                       }
                     />
                   </Animator>
                   <Animator animation={MoveIn(-1000, 0)}>
                     <CardService
-                      service="Instalación de Equipos Nuevos"
-                      description="Elevadores<br />
-              Escaleras electrícas<br />
-              Rampas electrícas<br />
-              Entre otros<br />"
+                      service="Mantenimiento Preventivo y Correctivo"
+                      description="Rutinas de mantenimiento<br />
+                        Reparaciones<br />
+                        Overhaul<br />
+                        Entre otros<br />"
                       icon={
-                        <VscTools
-                          style={{ color: "yellow", fontSize: "30px" }}
+                        <MdEngineering
+                          style={{ color: "yellow", fontSize: "60px" }}
                         />
                       }
                     />
                   </Animator>
                   <Animator animation={MoveIn(1000, 0)}>
                     <CardServiceRight
-                      service="Ajuste Electromecánico"
-                      description="Puesta en marcha<br />
-              Ajuste<br />
-              Pruebas de seguridad<br />
-              Llave en mano<br />"
+                      service="Modernizaciones"
+                      description="Adecuación de sistemas de control, botoneras, variadores de frecuencia, y demás elementos que brinden funcionalidades y estética moderna a sus equipos."
                       icon={
-                        <BsPcDisplay
-                          style={{ color: "yellow", fontSize: "30px" }}
+                        <GiModernCity
+                          style={{ color: "yellow", fontSize: "60px" }}
                         />
                       }
+                      textAlign="justify"
                     />
                   </Animator>
                 </span>
