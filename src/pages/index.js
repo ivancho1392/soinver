@@ -64,54 +64,66 @@ export default function Home() {
             {/* Nuestra empresa */}
 
             <ScrollPage>
-              <div className={styles.homeMenus}>
-              <Animator animation={MoveIn(-1000, 0)}>
-                <div className={styles.homeM1}>
-                  <div className={styles.homeM2}>
-                    <p className={styles.homeLogos}>
-                      <FaTools size={35} />
-                    </p>
-                    <p className={styles.homeM3}>+400</p>
-                  </div>
-                  <div className={styles.homeM4}>
-                    Equipos instalados y/o ajustados
-                  </div>
-                  <div className={styles.homeM3}>Colombia</div>
+              <div className={styles.ssHeader}>
+                <h1>Trayectoria</h1>
+                <div className={styles.ssImage}>
+                  <Image
+                    src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/NuestrosServicios1240.png"
+                    width="1240"
+                    height="656"
+                    alt="LogoSoinver"
+                    layout="responsive"
+                  />
                 </div>
+              </div>
+              <div className={styles.homeMenus}>
+                <Animator animation={MoveIn(-1000, 0)}>
+                  <div className={styles.homeM1}>
+                    <div className={styles.homeM2}>
+                      <p className={styles.homeLogos}>
+                        <FaTools size={35} />
+                      </p>
+                      <p className={styles.homeM3}>+400</p>
+                    </div>
+                    <div className={styles.homeM4}>
+                      Equipos instalados y/o ajustados
+                    </div>
+                    <div className={styles.homeM3}>Colombia</div>
+                  </div>
                 </Animator>
                 <Animator animation={MoveIn(1000, 0)}>
-                <div className={styles.homeM1}>
-                  <div className={styles.homeM2}>
-                    <p className={styles.homeLogos}>
-                      <BsGearFill size={35} />
-                    </p>
-                    <p className={styles.homeM3}>+100</p>
+                  <div className={styles.homeM1}>
+                    <div className={styles.homeM2}>
+                      <p className={styles.homeLogos}>
+                        <BsGearFill size={35} />
+                      </p>
+                      <p className={styles.homeM3}>+100</p>
+                    </div>
+                    <div className={styles.homeM4}>
+                      Equipos instalados y/o ajustados
+                    </div>
+                    <div className={styles.homeM3}>Panamá</div>
                   </div>
-                  <div className={styles.homeM4}>
-                    Equipos instalados y/o ajustados
-                  </div>
-                  <div className={styles.homeM3}>Panamá</div>
-                </div>
                 </Animator>
                 <Animator animation={MoveIn(-1000, 0)}>
-                <div className={styles.homeM1}>
-                  <p className={styles.homeLogos}>
-                    <MdEngineering size={50} />
-                  </p>
-                  <p className={styles.homeM4}>
-                    Personal altamente calificado y con amplia experiencia
-                  </p>
-                </div>
+                  <div className={styles.homeM1}>
+                    <p className={styles.homeLogos}>
+                      <MdEngineering size={50} />
+                    </p>
+                    <p className={styles.homeM4}>
+                      Personal altamente calificado y con amplia experiencia
+                    </p>
+                  </div>
                 </Animator>
                 <Animator animation={MoveIn(1000, 0)}>
-                <div className={styles.homeM1}>
-                  <p className={styles.homeLogos}>
-                    <FaHandshake size={50} />
-                  </p>
-                  <p className={styles.homeM4}>
-                    El mejor servicio en equipos de transporte vertical
-                  </p>
-                </div>
+                  <div className={styles.homeM1}>
+                    <p className={styles.homeLogos}>
+                      <FaHandshake size={50} />
+                    </p>
+                    <p className={styles.homeM4}>
+                      El mejor servicio en equipos de transporte vertical
+                    </p>
+                  </div>
                 </Animator>
               </div>
             </ScrollPage>
@@ -136,9 +148,10 @@ export default function Home() {
                   justifyContent: "center",
                   alignItems: "initial",
                   height: "100%",
+                  width: "600px",
                 }}
               >
-                <span>
+                <span style={{ width: 600 }}>
                   <Animator animation={MoveIn(-1000, 0)}>
                     <CardService
                       service="Instalación de Equipos Nuevos"
@@ -199,98 +212,6 @@ export default function Home() {
               </div>
             </ScrollPage>
           </ScrollContainer>
-
-          <div className={styles.homeMenus}>
-            <div className={styles.homeM1}>
-              <div className={styles.homeM2}>
-                <p className={styles.homeLogos}>
-                  <FaTools size={35} />
-                </p>
-                <p className={styles.homeM3}>+400</p>
-              </div>
-              <div className={styles.homeM4}>
-                Equipos instalados y/o ajustados
-              </div>
-              <div className={styles.homeM3}>Colombia</div>
-            </div>
-            <div className={styles.homeM1}>
-              <div className={styles.homeM2}>
-                <p className={styles.homeLogos}>
-                  <BsGearFill size={35} />
-                </p>
-                <p className={styles.homeM3}>+100</p>
-              </div>
-              <div className={styles.homeM4}>
-                Equipos instalados y/o ajustados
-              </div>
-              <div className={styles.homeM3}>Panamá</div>
-            </div>
-            <div className={styles.homeM1}>
-              <p className={styles.homeLogos}>
-                <MdEngineering size={50} />
-              </p>
-              <p className={styles.homeM4}>
-                Personal altamente calificado y con amplia experiencia
-              </p>
-            </div>
-            <div className={styles.homeM1}>
-              <p className={styles.homeLogos}>
-                <FaHandshake size={50} />
-              </p>
-              <p className={styles.homeM4}>
-                El mejor servicio en equipos de transporte vertical
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Second Section */}
-        <div className={styles.secondSection}>
-          <div className={styles.ssHeader}>
-            <h1>Nuestros Servicios</h1>
-            <div className={styles.ssImage}>
-              <Image
-                src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/NuestrosServicios1240.png"
-                width="1240"
-                height="656"
-                alt="LogoSoinver"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <CardService
-            service="Instalación de Equipos Nuevos"
-            description="Elevadores<br />
-              Escaleras electrícas<br />
-              Rampas electrícas<br />
-              Entre otros<br />"
-            icon={<VscTools style={{ color: "yellow", fontSize: "30px" }} />}
-          />
-          <CardServiceRight
-            service="Ajuste Electromecánico"
-            description="Puesta en marcha<br />
-              Ajuste<br />
-              Pruebas de seguridad<br />
-              Llave en mano<br />"
-            icon={<BsPcDisplay style={{ color: "yellow", fontSize: "30px" }} />}
-          />
-          <CardService
-            service="Mantenimiento Preventivo y Correctivo"
-            description="Rutinas de mantenimiento<br />
-              Reparaciones<br />
-              Overhaul<br />
-              Entre otros<br />"
-            icon={
-              <MdEngineering style={{ color: "yellow", fontSize: "30px" }} />
-            }
-          />
-          <CardServiceRight
-            service="Modernizaciones"
-            description="Adecuación de sistemas de control, botoneras, variadores de frecuencia, y demás elementos que brinden funcionalidades y estética moderna a sus equipos."
-            icon={
-              <GiModernCity style={{ color: "yellow", fontSize: "30px" }} />
-            }
-            textAlign="justify"
-          />
         </div>
       </>
     </Layout>
