@@ -61,8 +61,7 @@ export default function Home() {
               </Animator>
             </ScrollPage>
 
-            {/* Nuestra empresa */}
-
+            {/* Trayectoria */}
             <ScrollPage>
               <div className={styles.ssHeader}>
                 <h1>Trayectoria</h1>
@@ -134,7 +133,7 @@ export default function Home() {
                 <h1>Nuestros Servicios</h1>
                 <div className={styles.ssImage}>
                   <Image
-                    src="https://soinverjip.s3.amazonaws.com/fotos/20230808_131649.jpg"
+                    src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/mrupper.jpeg"
                     width="1240"
                     height="656"
                     alt="LogoSoinver"
@@ -207,6 +206,80 @@ export default function Home() {
                     />
                   </Animator>
                 </span>
+              </div>
+            </ScrollPage>
+
+            {/*nuestro equipo*/}
+            <ScrollPage className={styles.homeBackground1}>
+              <div className={styles.ssHeader}>
+                <h1>Equipo SOINVER</h1>
+                <div className={styles.ssImage}>
+                  <Image
+                    src="https://soinverjip.s3.amazonaws.com/fotos/20230808_132434.jpg"
+                    width="1240"
+                    height="656"
+                    alt="LogoSoinver"
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+              <div className={styles.homeMenus}>
+                <Animator animation={MoveIn(-1000, 0)}>
+                  <div className={styles.homeM1}>
+                    <div className={styles.homeM4}>
+                      <Image
+                        src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/GinaBR.PNG"
+                        width="1240"
+                        height="656"
+                        alt="LogoSoinver"
+                        layout="responsive"
+                      />
+                    </div>
+                    <div className={styles.homeM3}>Ing. Gina Ruiz</div>
+                  </div>
+                </Animator>
+                <Animator animation={MoveIn(1000, 0)}>
+                  <div className={styles.homeM1}>
+                    <div className={styles.homeM4}>
+                      <Image
+                        src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/IvanBR.PNG"
+                        width="1240"
+                        height="656"
+                        alt="LogoSoinver"
+                        layout="responsive"
+                      />
+                    </div>
+                    <div className={styles.homeM3}>Ing. Jorge Ivan Puyo</div>
+                  </div>
+                </Animator>
+                <Animator animation={MoveIn(-1000, 0)}>
+                  <div className={styles.homeM1}>
+                    <div className={styles.homeM4}>
+                      <Image
+                        src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/PuyoBR.PNG"
+                        width="1240"
+                        height="656"
+                        alt="LogoSoinver"
+                        layout="responsive"
+                      />
+                    </div>
+                    <div className={styles.homeM3}>Jorge Enrique Puyo</div>
+                  </div>
+                </Animator>
+                <Animator animation={MoveIn(1000, 0)}>
+                  <div className={styles.homeM1}>
+                    <div className={styles.homeM4}>
+                      <Image
+                        src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/LizethBR.PNG"
+                        width="1240"
+                        height="656"
+                        alt="LogoSoinver"
+                        layout="responsive"
+                      />
+                    </div>
+                    <div className={styles.homeM3}>Psic. Lizeth Puyo</div>
+                  </div>
+                </Animator>
               </div>
             </ScrollPage>
           </ScrollContainer>
