@@ -68,7 +68,7 @@ export default function Home() {
                 <h1>Trayectoria</h1>
                 <div className={styles.ssImage}>
                   <Image
-                    src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/NuestrosServicios1240.png"
+                    src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/izajeAIT.jpg"
                     width="1240"
                     height="656"
                     alt="LogoSoinver"
@@ -129,7 +129,7 @@ export default function Home() {
             </ScrollPage>
 
             {/*nuestros servicios*/}
-            <ScrollPage>
+            <ScrollPage className={styles.homeBackground1}>
               <div className={styles.ssHeader}>
                 <h1>Nuestros Servicios</h1>
                 <div className={styles.ssImage}>
