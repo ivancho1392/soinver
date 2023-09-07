@@ -47,84 +47,18 @@ export default function Home() {
             <ScrollPage>
               <Animator animation={FadeUp} style={{ width: 500 }}>
                 <h1 className={styles.homeTittle}>
-                  Elevadores y Escaleras Eléctricas
-                </h1>
-              </Animator>
-            </ScrollPage>
-            {/*subtitulo*/}
-            <ScrollPage>
-              <Animator animation={FadeUp} style={{ width: 450 }}>
-                <h1 className={styles.homeTittle2}>
-                  Soluciones de Ingeniería Vertical, el mejor servicio en
-                  equipos de transporte vertical
-                </h1>
-              </Animator>
-            </ScrollPage>
-
-            {/* Trayectoria */}
-            <ScrollPage>
-              <div className={styles.ssHeader}>
-                <h1>Trayectoria</h1>
-                <div className={styles.ssImage}>
                   <Image
-                    src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/izajeAIT.jpg"
-                    width="1240"
-                    height="656"
+                    src="/logos/logo-soinver.png"
+                    width="1442"
+                    height="288"
                     alt="LogoSoinver"
                     layout="responsive"
                   />
-                </div>
-              </div>
-              <div className={styles.homeMenus}>
-                <Animator animation={MoveIn(-1000, 0)}>
-                  <div className={styles.homeM1}>
-                    <div className={styles.homeM2}>
-                      <p className={styles.homeLogos}>
-                        <FaTools size={35} />
-                      </p>
-                      <p className={styles.homeM3}>+400</p>
-                    </div>
-                    <div className={styles.homeM4}>
-                      Equipos instalados y/o ajustados
-                    </div>
-                    <div className={styles.homeM3}>Colombia</div>
-                  </div>
-                </Animator>
-                <Animator animation={MoveIn(1000, 0)}>
-                  <div className={styles.homeM1}>
-                    <div className={styles.homeM2}>
-                      <p className={styles.homeLogos}>
-                        <BsGearFill size={35} />
-                      </p>
-                      <p className={styles.homeM3}>+100</p>
-                    </div>
-                    <div className={styles.homeM4}>
-                      Equipos instalados y/o ajustados
-                    </div>
-                    <div className={styles.homeM3}>Panamá</div>
-                  </div>
-                </Animator>
-                <Animator animation={MoveIn(-1000, 0)}>
-                  <div className={styles.homeM1}>
-                    <p className={styles.homeLogos}>
-                      <MdEngineering size={50} />
-                    </p>
-                    <p className={styles.homeM4}>
-                      Personal altamente calificado y con amplia experiencia
-                    </p>
-                  </div>
-                </Animator>
-                <Animator animation={MoveIn(1000, 0)}>
-                  <div className={styles.homeM1}>
-                    <p className={styles.homeLogos}>
-                      <FaHandshake size={50} />
-                    </p>
-                    <p className={styles.homeM4}>
-                      El mejor servicio en equipos de transporte vertical
-                    </p>
-                  </div>
-                </Animator>
-              </div>
+                </h1>
+                <h1 className={styles.homeTittle2}>
+                  El mejor servicio en equipos de transporte vertical
+                </h1>
+              </Animator>
             </ScrollPage>
 
             {/*nuestros servicios*/}
@@ -209,6 +143,72 @@ export default function Home() {
               </div>
             </ScrollPage>
 
+            {/* Trayectoria */}
+            <ScrollPage>
+              <div className={styles.ssHeader}>
+                <h1>Trayectoria</h1>
+                <div className={styles.ssImage}>
+                  <Image
+                    src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/izajeAIT.jpg"
+                    width="1240"
+                    height="656"
+                    alt="LogoSoinver"
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+              <div className={styles.homeMenus}>
+                <Animator animation={MoveIn(-1000, 0)}>
+                  <div className={styles.homeM1}>
+                    <div className={styles.homeM2}>
+                      <p className={styles.homeLogos}>
+                        <FaTools size={35} />
+                      </p>
+                      <p className={styles.homeM3}>+400</p>
+                    </div>
+                    <div className={styles.homeM4}>
+                      Equipos instalados y/o ajustados
+                    </div>
+                    <div className={styles.homeM3}>Colombia</div>
+                  </div>
+                </Animator>
+                <Animator animation={MoveIn(1000, 0)}>
+                  <div className={styles.homeM1}>
+                    <div className={styles.homeM2}>
+                      <p className={styles.homeLogos}>
+                        <BsGearFill size={35} />
+                      </p>
+                      <p className={styles.homeM3}>+100</p>
+                    </div>
+                    <div className={styles.homeM4}>
+                      Equipos instalados y/o ajustados
+                    </div>
+                    <div className={styles.homeM3}>Panamá</div>
+                  </div>
+                </Animator>
+                <Animator animation={MoveIn(-1000, 0)}>
+                  <div className={styles.homeM1}>
+                    <p className={styles.homeLogos}>
+                      <MdEngineering size={50} />
+                    </p>
+                    <p className={styles.homeM4}>
+                      Personal altamente calificado y con amplia experiencia
+                    </p>
+                  </div>
+                </Animator>
+                <Animator animation={MoveIn(1000, 0)}>
+                  <div className={styles.homeM1}>
+                    <p className={styles.homeLogos}>
+                      <FaHandshake size={50} />
+                    </p>
+                    <p className={styles.homeM4}>
+                      El mejor servicio en equipos de transporte vertical
+                    </p>
+                  </div>
+                </Animator>
+              </div>
+            </ScrollPage>
+
             {/*nuestro equipo*/}
             <ScrollPage className={styles.homeBackground1}>
               <div className={styles.ssHeader}>
@@ -223,61 +223,57 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className={styles.homeMenus}>
+              <div className={styles.contenedorFotos}>
                 <Animator animation={MoveIn(-1000, 0)}>
-                  <div className={styles.homeM1}>
-                    <div className={styles.homeM4}>
-                      <Image
-                        src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/GinaBR.PNG"
-                        width="1240"
-                        height="656"
-                        alt="LogoSoinver"
-                        layout="responsive"
-                      />
-                    </div>
-                    <div className={styles.homeM3}>Ing. Gina Ruiz</div>
+                  <div className={styles.fotopersonal}>
+                    <Image
+                      src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/GinaBR.PNG"
+                      width="1240"
+                      height="656"
+                      alt="LogoSoinver"
+                      layout="responsive"
+                      className={styles.foto}
+                    />
+                    <div className={styles.texto}>Ing. Gina Ruiz</div>
                   </div>
                 </Animator>
                 <Animator animation={MoveIn(1000, 0)}>
-                  <div className={styles.homeM1}>
-                    <div className={styles.homeM4}>
-                      <Image
-                        src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/IvanBR.PNG"
-                        width="1240"
-                        height="656"
-                        alt="LogoSoinver"
-                        layout="responsive"
-                      />
-                    </div>
-                    <div className={styles.homeM3}>Ing. Jorge Ivan Puyo</div>
+                  <div className={styles.fotopersonal}>
+                    <Image
+                      src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/IvanBR.PNG"
+                      width="1240"
+                      height="656"
+                      alt="LogoSoinver"
+                      layout="responsive"
+                      className={styles.foto}
+                    />
+                  <div className={styles.texto}>Ing. Jorge Ivan Puyo</div>
                   </div>
                 </Animator>
                 <Animator animation={MoveIn(-1000, 0)}>
-                  <div className={styles.homeM1}>
-                    <div className={styles.homeM4}>
-                      <Image
-                        src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/PuyoBR.PNG"
-                        width="1240"
-                        height="656"
-                        alt="LogoSoinver"
-                        layout="responsive"
-                      />
-                    </div>
-                    <div className={styles.homeM3}>Jorge Enrique Puyo</div>
+                  <div className={styles.fotopersonal}>
+                    <Image
+                      src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/PuyoBR.PNG"
+                      width="1240"
+                      height="656"
+                      alt="LogoSoinver"
+                      layout="responsive"
+                      className={styles.foto}
+                    />
+                    <div className={styles.texto}>Jorge Enrique Puyo</div>
                   </div>
                 </Animator>
                 <Animator animation={MoveIn(1000, 0)}>
-                  <div className={styles.homeM1}>
-                    <div className={styles.homeM4}>
-                      <Image
-                        src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/LizethBR.PNG"
-                        width="1240"
-                        height="656"
-                        alt="LogoSoinver"
-                        layout="responsive"
-                      />
-                    </div>
-                    <div className={styles.homeM3}>Psic. Lizeth Puyo</div>
+                  <div className={styles.fotopersonal}>
+                    <Image
+                      src="https://soinverjip.s3.amazonaws.com/mobile/imagenes/LizethBR.PNG"
+                      width="1240"
+                      height="656"
+                      alt="LogoSoinver"
+                      layout="responsive"
+                      className={styles.foto}
+                    />
+                    <div className={styles.texto}>Psic. Lizeth Puyo</div>
                   </div>
                 </Animator>
               </div>
