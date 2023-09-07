@@ -11,8 +11,8 @@ export const Whatsapp = () => {
             className={styles.btnWhatsappImage}
             src="/logos/logo-whatsapp.svg"
             alt="Contact with Whatsapp"
-            width={50}
-            height={50}
+            width={80}
+            height={80}
           />
         </Link>
       </div>

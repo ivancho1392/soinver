@@ -121,8 +121,7 @@
   margin-top: 12px;
   position: relative;
   z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .ssHeader h1{
