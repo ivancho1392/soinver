@@ -1,16 +1,19 @@
-import { Manjari } from 'next/font/google'
-import Navbar from '../Components/Navbar'
- 
+import { Manjari } from "next/font/google";
+import Navbar from "../Components/Navbar";
+import { SoinverProvider } from "../Context";
+
 const manjari = Manjari({
-  weight: ['100','400'],
-  subsets: ['latin'],
-})
- 
+  weight: ["100", "400"],
+  subsets: ["latin"],
+});
+
 export default function MyApp({ Component, pageProps }) {
   return (
     <main className={manjari.className}>
-      <Navbar/>
-      <Component {...pageProps} />
+      <SoinverProvider>
+        <Navbar />
+        <Component {...pageProps} />
+      </SoinverProvider>
     </main>
-  )
+  );
 }

@@ -11,6 +11,7 @@ import { BsPcDisplay } from "react-icons/bs";
 import { GiModernCity } from "react-icons/gi";
 import { AiOutlineMail } from "react-icons/ai";
 import dynamic from "next/dynamic";
+import Menu from "../Components/Menu";
 const Animator = dynamic(
   import("react-scroll-motion").then(it => it.Animator),
   { ssr: false },
@@ -22,20 +23,14 @@ import {
   batch,
   Fade,
   FadeIn,
-  FadeOut,
   Move,
   MoveIn,
-  MoveOut,
   Sticky,
   StickyIn,
-  StickyOut,
-  Zoom,
   ZoomIn,
-  ZoomOut,
 } from "react-scroll-motion";
 
 export default function Home() {
-  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
   const FadeUp = batch(Fade(), Move(), Sticky());
 
   return (
@@ -224,6 +219,8 @@ export default function Home() {
                   />
                 </div>
               </div>
+
+              {/*fotos*/}
               <div className={styles.contenedorFotos}>
                 <Animator animation={MoveIn(-1000, 0)}>
                   <div className={styles.fotopersonal}>
@@ -278,6 +275,8 @@ export default function Home() {
                   </div>
                 </Animator>
               </div>
+
+              {/*contacto*/}
               <div className={styles.contacto}>
                 Contacto
                 <ul className={styles.listaContacto}>

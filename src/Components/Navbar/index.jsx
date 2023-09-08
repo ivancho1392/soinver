@@ -1,8 +1,12 @@
 import styles from './styles.module.css'
 import Image from 'next/image';
 import { FaBars } from 'react-icons/fa6';
+import { useContext } from 'react';
+import { SoinverContext } from '../../Context';
 
 const Navbar = () => {
+    const context = useContext(SoinverContext);
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
@@ -15,7 +19,7 @@ const Navbar = () => {
                 />
             </div>
             <div className={styles.options}>
-                <FaBars size={30}/>
+                <FaBars size={30} onClick={() => { context.toggleMenu();}}/>
             </div>
         </nav>
     )
