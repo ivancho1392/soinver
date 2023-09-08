@@ -287,19 +287,19 @@ export default function Home() {
                   </li>
                   <li>
                     <BsInstagram style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
-                    <p>Instagram</p>
+                    <p>soinver_sas</p>
                   </li>
                   <li>
                     <BsWhatsapp style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
-                    <p>Whastapp PTY</p>
+                    <p>+507 6316 8396</p>
                   </li>
                   <li>
                     <BsWhatsapp style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
-                    <p>Whatsapp COL</p>
+                    <p>+57 316 700 6418</p>
                   </li>
                   <li>
                     <BsLinkedin style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
-                    <p>LinkedIn</p>
+                    <p>Soinver SAS</p>
                   </li>
                 </ul>
               </div>

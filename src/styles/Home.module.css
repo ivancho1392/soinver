@@ -146,7 +146,7 @@
 
 /*Estilos contenedor fotos personal*/
 .fotopersonal {
-  width: 300px;
+  width: 270px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -206,20 +206,19 @@
   font-size: 28px;
   font-weight: 400;
   list-style-type: none;
+  margin: 0 0 8px 0;
 }
 
 .listaContacto > li {
   display: flex;
   flex-direction: row;
-  height: 45px;
+  height: 50px;
 }
 
 .listaContacto > li > p {
   margin-left: 8px;
-  align-items: start;
 }
 
 .icon{
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 18px;
 }
