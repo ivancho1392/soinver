@@ -11,7 +11,7 @@ import { BsPcDisplay } from "react-icons/bs";
 import { GiModernCity } from "react-icons/gi";
 import { AiOutlineMail } from "react-icons/ai";
 import dynamic from "next/dynamic";
-import Menu from "../Components/Menu";
+
 const Animator = dynamic(
   import("react-scroll-motion").then(it => it.Animator),
   { ssr: false },
@@ -59,7 +59,7 @@ export default function Home() {
 
             {/*nuestros servicios*/}
             <ScrollPage className={styles.homeBackground1}>
-              <div className={styles.ssHeader}>
+              <div id="servicios" className={styles.ssHeader}>
                 <h1>Nuestros Servicios</h1>
                 <div className={styles.ssImage}>
                   <Image
@@ -141,7 +141,7 @@ export default function Home() {
 
             {/* Trayectoria */}
             <ScrollPage className={styles.homeBackground1}>
-              <div className={styles.ssHeader}>
+              <div id="trayectoria" className={styles.ssHeader}>
                 <h1>Trayectoria</h1>
                 <div className={styles.ssImage}>
                   <Image
@@ -207,7 +207,7 @@ export default function Home() {
 
             {/*nuestro equipo*/}
             <ScrollPage className={styles.homeBackground1}>
-              <div className={styles.ssHeader}>
+              <div id="equipo" className={styles.ssHeader}>
                 <h1>Equipo SOINVER</h1>
                 <div className={styles.ssImage}>
                   <Image
