@@ -128,13 +128,13 @@
   margin-top: 12px;
   margin-left: 8px;
   font-weight: 100;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 12px; 
-  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 8px 6px 8px; 
+  background: rgba(0, 0, 0, 0.9);
   color: white;
   border-radius: 12px;
 }
@@ -170,10 +170,10 @@
 .contenedorFotos > div {
   cursor: pointer;
   width: 80%;
-  height: 90%;
   color: white;
   background: black;
   border-radius: 16px;
+  margin-bottom: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,6 +186,40 @@
   row-gap: 20px;
   align-items: center;
   justify-items: center;
-  margin: auto;
-  margin-top: 20px;
+  margin: 20px auto 20px auto;
+}
+
+.contacto{
+  border: solid 4px black;
+  margin: auto 0px auto auto;
+  background-color: black;
+  color: yellow;
+  border-radius: 24px 0px 0px 24px;
+  padding: 8px;
+  width: auto;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.listaContacto{
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  list-style-type: none;
+}
+
+.listaContacto > li {
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+}
+
+.listaContacto > li > p {
+  margin-left: 8px;
+  align-items: start;
+}
+
+.icon{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

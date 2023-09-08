@@ -1,7 +1,7 @@
 import styles from "../styles/Home.module.css";
 import { FaHandshake, FaTools, FaGears } from "react-icons/fa";
 import { MdEngineering } from "react-icons/md";
-import { BsGearFill, BsJustify } from "react-icons/bs";
+import { BsGearFill, BsInstagram, BsWhatsapp, BsLinkedin } from "react-icons/bs";
 import Layout from "../Components/Layout";
 import Image from "next/image";
 import CardService from "../Components/CardService";
@@ -9,6 +9,7 @@ import CardServiceRight from "../Components/CardServiceRight";
 import { VscTools } from "react-icons/vsc";
 import { BsPcDisplay } from "react-icons/bs";
 import { GiModernCity } from "react-icons/gi";
+import { AiOutlineMail } from "react-icons/ai";
 import dynamic from "next/dynamic";
 const Animator = dynamic(
   import("react-scroll-motion").then(it => it.Animator),
@@ -144,7 +145,7 @@ export default function Home() {
             </ScrollPage>
 
             {/* Trayectoria */}
-            <ScrollPage>
+            <ScrollPage className={styles.homeBackground1}>
               <div className={styles.ssHeader}>
                 <h1>Trayectoria</h1>
                 <div className={styles.ssImage}>
@@ -247,7 +248,7 @@ export default function Home() {
                       layout="responsive"
                       className={styles.foto}
                     />
-                  <div className={styles.texto}>Ing. Jorge Ivan Puyo</div>
+                    <div className={styles.texto}>Ing. Jorge Ivan Puyo</div>
                   </div>
                 </Animator>
                 <Animator animation={MoveIn(-1000, 0)}>
@@ -276,6 +277,31 @@ export default function Home() {
                     <div className={styles.texto}>Psic. Lizeth Puyo</div>
                   </div>
                 </Animator>
+              </div>
+              <div className={styles.contacto}>
+                Contacto
+                <ul className={styles.listaContacto}>
+                  <li>
+                    <AiOutlineMail style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <p>soinversas@gmail.com</p>
+                  </li>
+                  <li>
+                    <BsInstagram style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <p>Instagram</p>
+                  </li>
+                  <li>
+                    <BsWhatsapp style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <p>Whastapp PTY</p>
+                  </li>
+                  <li>
+                    <BsWhatsapp style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <p>Whatsapp COL</p>
+                  </li>
+                  <li>
+                    <BsLinkedin style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <p>LinkedIn</p>
+                  </li>
+                </ul>
               </div>
             </ScrollPage>
           </ScrollContainer>
