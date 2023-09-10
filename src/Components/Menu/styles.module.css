@@ -1,23 +1,50 @@
-.menuclose{
-    display: flex;
-    top: 55px;
-    width: 100%;
-    height: 0; /* Cambia la altura a 100% para cubrir toda la pantalla */
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-    z-index: 100;
-    opacity: 0; /* Cambia la opacidad a 1 para que sea visible */
-    transition: height 0.5s ease-in-out, opacity 1s ease-in-out;
+.menuclose {
+  display: flex;
+  flex-direction: column;
+  top: 55px;
+  width: 100%;
+  height: 0; /* Cambia la altura a 100% para cubrir toda la pantalla */
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+  opacity: 0; /* Cambia la opacidad a 1 para que sea visible */
+  transition:
+    height 0.5s ease-in-out,
+    opacity 1s ease-in-out;
 }
 
 .menuopen {
-    display: flex;
-    top: 55px;
-    width: 100%;
-    height: 100%; /* Cambia la altura a 100% para cubrir toda la pantalla */
-    position: fixed;
-    background-color: rgb(255, 255, 255);
-    z-index: 100;
-    opacity: 1; /* Cambia la opacidad a 1 para que sea visible */
-    transition: height 1s ease-in-out, opacity 1s ease-in-out; /* Agrega transiciones para altura y opacidad */
+  display: flex;
+  flex-direction: column;
+  top: 55px;
+  width: 100%;
+  height: 100%; /* Cambia la altura a 100% para cubrir toda la pantalla */
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+  opacity: 1; /* Cambia la opacidad a 1 para que sea visible */
+  transition:
+    height 1s ease-in-out,
+    opacity 1s ease-in-out; /* Agrega transiciones para altura y opacidad */
 }
+
+.menuitem {
+  margin: 50px auto 10px 50px;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.icon {
+  /* Estilos para el icono */
+}
+
+.name {
+  margin-left: 30px;
+  font-size: 24px;
+}
+
+.name a {
+    text-decoration: none; 
+    color: black; 
+    cursor: pointer;
+  }
