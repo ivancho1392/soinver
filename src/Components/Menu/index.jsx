@@ -49,25 +49,6 @@ const Menu = () => {
         </div>
       </div>
     </div>
-    // <div className={context.isMenuOpen ? styles.menuopen : styles.menuclose}>
-    //     <ul>
-    //         <li>
-    //             <Link href="/#servicios" onClick={context.closeMenu}>Nuestros Servicios</Link>
-    //         </li>
-    //         <li>
-    //             <Link href="/#trayectoria" onClick={context.closeMenu}>Trayectoria de nuestra compañia</Link>
-    //         </li>
-    //         <li>
-    //             <Link href="/#equipo" onClick={context.closeMenu}>Equipo Soinver </Link>
-    //         </li>
-    //         <li>
-    //             Galeria de Proyectos
-    //         </li>
-    //         <li>
-    //             Contacto
-    //         </li>
-    //     </ul>
-    // </div>
   );
 };
 

@@ -1,7 +1,12 @@
 import styles from "../styles/Home.module.css";
 import { FaHandshake, FaTools, FaGears } from "react-icons/fa";
 import { MdEngineering } from "react-icons/md";
-import { BsGearFill, BsInstagram, BsWhatsapp, BsLinkedin } from "react-icons/bs";
+import {
+  BsGearFill,
+  BsInstagram,
+  BsWhatsapp,
+  BsLinkedin,
+} from "react-icons/bs";
 import Layout from "../Components/Layout";
 import Image from "next/image";
 import CardService from "../Components/CardService";
@@ -56,10 +61,10 @@ export default function Home() {
                 </h1>
               </Animator>
             </ScrollPage>
-
             {/*nuestros servicios*/}
             <ScrollPage className={styles.homeBackground1}>
-              <div id="servicios" className={styles.ssHeader}>
+              <p id="servicios" className={styles.separador}></p>
+              <div className={styles.ssHeader}>
                 <h1>Nuestros Servicios</h1>
                 <div className={styles.ssImage}>
                   <Image
@@ -141,7 +146,8 @@ export default function Home() {
 
             {/* Trayectoria */}
             <ScrollPage className={styles.homeBackground1}>
-              <div id="trayectoria" className={styles.ssHeader}>
+              <p id="trayectoria" className={styles.separador}></p>
+              <div className={styles.ssHeader}>
                 <h1>Trayectoria</h1>
                 <div className={styles.ssImage}>
                   <Image
@@ -207,7 +213,8 @@ export default function Home() {
 
             {/*nuestro equipo*/}
             <ScrollPage className={styles.homeBackground1}>
-              <div id="equipo" className={styles.ssHeader}>
+            <p id="equipo" className={styles.separador}></p>
+              <div className={styles.ssHeader}>
                 <h1>Equipo SOINVER</h1>
                 <div className={styles.ssImage}>
                   <Image
@@ -281,23 +288,38 @@ export default function Home() {
                 Contacto
                 <ul className={styles.listaContacto}>
                   <li>
-                    <AiOutlineMail style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <AiOutlineMail
+                      style={{ color: "white", fontSize: "40px" }}
+                      className={styles.icon}
+                    />
                     <p>soinversas@gmail.com</p>
                   </li>
                   <li>
-                    <BsInstagram style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <BsInstagram
+                      style={{ color: "white", fontSize: "40px" }}
+                      className={styles.icon}
+                    />
                     <p>soinver_sas</p>
                   </li>
                   <li>
-                    <BsWhatsapp style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <BsWhatsapp
+                      style={{ color: "white", fontSize: "40px" }}
+                      className={styles.icon}
+                    />
                     <p>+507 6316 8396</p>
                   </li>
                   <li>
-                    <BsWhatsapp style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <BsWhatsapp
+                      style={{ color: "white", fontSize: "40px" }}
+                      className={styles.icon}
+                    />
                     <p>+57 316 700 6418</p>
                   </li>
                   <li>
-                    <BsLinkedin style={{ color: "white", fontSize: "40px" }} className={styles.icon}/>
+                    <BsLinkedin
+                      style={{ color: "white", fontSize: "40px" }}
+                      className={styles.icon}
+                    />
                     <p>Soinver SAS</p>
                   </li>
                 </ul>
