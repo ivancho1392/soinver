@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { FaBars } from 'react-icons/fa6';
 import { useContext } from 'react';
 import { SoinverContext } from '../../Context';
+import {AiOutlineCloseSquare} from 'react-icons/ai';
 
 const Navbar = () => {
     const context = useContext(SoinverContext);
@@ -19,7 +20,8 @@ const Navbar = () => {
                 />
             </div>
             <div className={styles.options}>
-                <FaBars size={30} onClick={() => { context.toggleMenu();}}/>
+                {context.isMenuOpen ? <AiOutlineCloseSquare size={30} onClick={() => { context.toggleMenu();}}/> : <FaBars size={30} onClick={() => { context.toggleMenu();}}/>}
+                
             </div>
         </nav>
     )
