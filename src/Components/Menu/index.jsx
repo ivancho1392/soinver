@@ -12,7 +12,9 @@ const Menu = () => {
 
   return (
     <div className={context.isMenuOpen ? styles.menuopen : styles.menuclose}>
-      <Link
+      {context.isMenuOpen ? (
+        <>
+        <Link
         href="/#servicios"
         onClick={context.closeMenu}
         className={styles.menuitem}
@@ -38,7 +40,7 @@ const Menu = () => {
         <div className={styles.icon}><AiOutlineTeam/></div>
         <div className={styles.name}>Equipo Soinver</div>
       </Link>
-      <Link href="/" onClick={context.closeMenu} className={styles.menuitem}>
+      <Link href="/galeria" onClick={context.closeMenu} className={styles.menuitem}>
         <div className={styles.icon}><HiOutlinePhoto/></div>
         <div className={styles.name}>Galeria de Proyectos</div>
       </Link>
@@ -46,6 +48,9 @@ const Menu = () => {
         <div className={styles.icon}><BsWhatsapp/></div>
         <div className={styles.name}>Contacto</div>
       </Link>
+        </>
+      ) : null}
+      
     </div>
   );
 };
