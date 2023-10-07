@@ -39,6 +39,12 @@ export default function Galeria() {
             alt="LogoSoinver"
           />
         </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/maison/maison1.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
       </Carousel>
 
       <h1 className={styles.description}>
