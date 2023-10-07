@@ -12,6 +12,15 @@ export default function Galeria() {
         <div className={styles.videoContainer}>
           <video controls className={styles.video}>
             <source
+              src="https://soinverjip.s3.amazonaws.com/videos/LaMaison.mp4"
+              type="video/mp4"
+            />
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </div>
+        <div className={styles.videoContainer}>
+          <video controls className={styles.video}>
+            <source
               src="https://soinverjip.s3.amazonaws.com/videos/VIDEO+L1+ANDROID.mp4"
               type="video/mp4"
             />
