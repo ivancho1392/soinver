@@ -56,33 +56,21 @@ export default function Galeria() {
       <h1 className={styles.galeria}>PH Upper East Tower</h1>
 
       <Carousel className={styles.carousel} showThumbs={false}>
-        <div className={styles.videoContainer}>
-          <video controls className={styles.video}>
-            <source
-              src="https://soinverjip.s3.amazonaws.com/videos/LaMaison.mp4"
-              type="video/mp4"
-            />
-            Tu navegador no soporta el elemento de video.
-          </video>
-        </div>
-        <div className={styles.videoContainer}>
-          <video controls className={styles.video}>
-            <source
-              src="https://soinverjip.s3.amazonaws.com/videos/VIDEO+L1+ANDROID.mp4"
-              type="video/mp4"
-            />
-            Tu navegador no soporta el elemento de video.
-          </video>
-        </div>
         <div>
           <img
-            src="https://soinverjip.s3.amazonaws.com/fotos/20230808_131655.jpg"
+            src="https://soinverjip.s3.amazonaws.com/upper/Upper+1.jpg"
             alt="LogoSoinver"
           />
         </div>
         <div>
           <img
-            src="https://soinverjip.s3.amazonaws.com/fotos/20230808_134318.jpg"
+            src="https://soinverjip.s3.amazonaws.com/upper/Upper+2.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/upper/Upper+6.jpg"
             alt="LogoSoinver"
           />
         </div>
@@ -108,13 +96,31 @@ export default function Galeria() {
         </div>
         <div>
           <img
-            src="https://soinverjip.s3.amazonaws.com/fotos/20230808_131655.jpg"
+            src="https://soinverjip.s3.amazonaws.com/citygardens/City+Gardens+1.jpg"
             alt="LogoSoinver"
           />
         </div>
         <div>
           <img
-            src="https://soinverjip.s3.amazonaws.com/fotos/20230808_134318.jpg"
+            src="https://soinverjip.s3.amazonaws.com/citygardens/City+Gardens+2.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/citygardens/City+Gardens+3.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/citygardens/City+Gardens+4.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/citygardens/City+Gardens+5.jpg"
             alt="LogoSoinver"
           />
         </div>
@@ -137,21 +143,6 @@ export default function Galeria() {
             />
             Tu navegador no soporta el elemento de video.
           </video>
-        </div>
-        <div className={styles.videoContainer}>
-          <video controls className={styles.video}>
-            <source
-              src="https://soinverjip.s3.amazonaws.com/videos/VIDEO+L1+ANDROID.mp4"
-              type="video/mp4"
-            />
-            Tu navegador no soporta el elemento de video.
-          </video>
-        </div>
-        <div>
-          <img
-            src="https://soinverjip.s3.amazonaws.com/fotos/20230808_131655.jpg"
-            alt="LogoSoinver"
-          />
         </div>
         <div>
           <img
@@ -179,21 +170,6 @@ export default function Galeria() {
             />
             Tu navegador no soporta el elemento de video.
           </video>
-        </div>
-        <div className={styles.videoContainer}>
-          <video controls className={styles.video}>
-            <source
-              src="https://soinverjip.s3.amazonaws.com/videos/VIDEO+L1+ANDROID.mp4"
-              type="video/mp4"
-            />
-            Tu navegador no soporta el elemento de video.
-          </video>
-        </div>
-        <div>
-          <img
-            src="https://soinverjip.s3.amazonaws.com/fotos/20230808_131655.jpg"
-            alt="LogoSoinver"
-          />
         </div>
         <div>
           <img
