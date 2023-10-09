@@ -45,6 +45,36 @@ export default function Galeria() {
             alt="LogoSoinver"
           />
         </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/maison/maison2.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/maison/maison3.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/maison/maison4.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/maison/maison5.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/maison/maison6.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
       </Carousel>
 
       <h1 className={styles.description}>
@@ -65,6 +95,24 @@ export default function Galeria() {
         <div>
           <img
             src="https://soinverjip.s3.amazonaws.com/upper/Upper+2.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/upper/Upper+3.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/upper/Upper+4.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/upper/Upper+5.jpg"
             alt="LogoSoinver"
           />
         </div>
@@ -135,18 +183,57 @@ export default function Galeria() {
       <h1 className={styles.galeria}>Metro de Panamá</h1>
 
       <Carousel className={styles.carousel} showThumbs={false}>
-        <div className={styles.videoContainer}>
-          <video controls className={styles.video}>
-            <source
-              src="https://soinverjip.s3.amazonaws.com/videos/LaMaison.mp4"
-              type="video/mp4"
-            />
-            Tu navegador no soporta el elemento de video.
-          </video>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/metrol2/metro1.jpg"
+            alt="LogoSoinver"
+          />
         </div>
         <div>
           <img
-            src="https://soinverjip.s3.amazonaws.com/fotos/20230808_134318.jpg"
+            src="https://soinverjip.s3.amazonaws.com/metrol2/metro2.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/metrol2/metro3.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/metrol2/metro4.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/metrol2/metro5.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/metrol2/metro6.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/metrol2/metro7.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/metrol2/metro8.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/metrol2/metro9.jpg"
             alt="LogoSoinver"
           />
         </div>
@@ -162,18 +249,27 @@ export default function Galeria() {
       <h1 className={styles.galeria}>Ágora Convention Center</h1>
 
       <Carousel className={styles.carousel} showThumbs={false}>
-        <div className={styles.videoContainer}>
-          <video controls className={styles.video}>
-            <source
-              src="https://soinverjip.s3.amazonaws.com/videos/LaMaison.mp4"
-              type="video/mp4"
-            />
-            Tu navegador no soporta el elemento de video.
-          </video>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/agora/Agora3.jpg"
+            alt="LogoSoinver"
+          />
         </div>
         <div>
           <img
-            src="https://soinverjip.s3.amazonaws.com/fotos/20230808_134318.jpg"
+            src="https://soinverjip.s3.amazonaws.com/agora/Agora1.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/agora/Agora2.jpg"
+            alt="LogoSoinver"
+          />
+        </div>
+        <div>
+          <img
+            src="https://soinverjip.s3.amazonaws.com/agora/Agora4.jpg"
             alt="LogoSoinver"
           />
         </div>
@@ -181,7 +277,8 @@ export default function Galeria() {
 
       <h1 className={styles.description}>
         Para este proyecto SOINVER suministró servicios como subcontratista de
-        instalación y ajuste de doce (12) escaleras electricas para ELEVADORES OTIS. Bogotá Colombia.
+        instalación y ajuste de doce (12) escaleras electricas para ELEVADORES
+        OTIS. Bogotá Colombia.
       </h1>
     </Layout>
   );
